@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Merceri Ivory</title>
 </head>
@@ -16,36 +18,77 @@
         <a href="index.html"><img src="images/logo (2).png" alt="Alh A'Wasiu Merceri"></a>
         <nav>
             <ul role="list" id="primary-navigation" class="primary-navigation slide-in-right">
-                <li role="listitem"><a href="index.html" class="active">Home</a></li>
-                <li role="listitem"><a href="">About</a></li>
-                <li role="listitem"><a href="">Contact</a></li>
-                <button type="menu" class="close-nav-toggle">&times;<span class="visually-hidden">Menu</span></button>
+             <li class="activa"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Our Gallery</a></li>
             </ul>
         </nav>
         <button type="menu" class="mobile-nav-toggle">&#9776;<span class="visually-hidden">Menu</span></button>
+        <button type="menu" class="close-nav-toggle">&times;<span class="visually-hidden">Menu</span></button>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <h1>Premium Clothing Materials</h1>
+            <h1>Premium Clothing Materials For Every Creation</h1>
             <p>Find Quality fabrics that inspire style, comfort, and durability-perfect for for any design or wardrobe</p>
-            <div class="hero-button">
-                <button type="button">Get in Touch</button>
-                <button type="button">Browse fabrics</button>
-            </div>
+           <div class="cta">
+            <a href="https://wa.me/2250508049697" target="_blank">Get in Touch</a>
+            <a href="gallery.html">Browse Fabrics</a>
+           </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" data-aos="zoom-out-up">
         <div class="container">
           <h2>Our Collection</h2>
           <p>Discover a wide range of premium-quality fabrics that combine tradition, style, and comfort. Whether you’re creating classic attire or modern designs, our materials are crafted to inspire your creativity.</p>
-          <div class="image-grid">
-         <img src="images/1mg4.jpg" alt="Fabric 1">
-         <img src="images/img6.jpg" alt="Fabric 2">
-     <img src="images/img7.jpg" alt="Fabric 3">
-     <img src="images/img8.jpg" alt="Fabric 4">
+          <div class="partner-img active" >
+            <img src="images/catchy-19.jpg" alt="Alh wasiu Clothing Materials">
+            </div>
+          <div class="partner-img">
+            <img src="images/img7.jpg" alt="Alh wasiu Clothing Materials">
           </div>
-          <p style="margin-top:20px; font-weight:bold; color:#bb9f6f;">Explore our full range online or visit us in store today!</p>
+          <div class="partner-img active">
+            <img src="images/catchy-5.jpg" alt="Alh wasiu Clothing Materials">
+            </div>
+              <div class="partner-img active">
+                <img src="images/catchy13.jpg" alt="Alh wasiu Clothing Materials">
+                </div>
+                <div class="partner-img active">
+                  <img src="images/catchy15.jpg" alt="Alh wasiu Clothing Materials">
+                  </div>
+                  <div class="partner-img active">
+                    <img src="images/catchy17.jpg" alt="Alh wasiu Clothing Materials">
+                    </div>
+            <div class="partner-img">
+              <img src="images/catchy9.jpg" alt="Alh wasiu Clothing Materials">
+            </div>
+            <div class="partner-img">
+              <img src="images/img1.jpg" alt="Alh wasiu Clothing Materials">
+            </div>
+          <div class="partner-img">
+            <img src="images/img3.jpg" alt="Alh wasiu Clothing Materials">
+           </div>
+           <div class="partner-img">
+            <img src="images/img6.jpg" alt="Alh wasiu Clothing Materials">
+           </div>
+           <div class="partner-img"> 
+            <img src="images/catchy-2.jpeg" alt="Alh wasiu Clothing Materials">
+          </div>
+            </div>
+           <div class="partner-img">
+            <img src="images/img8.jpg" alt="Alh wasiu Clothing Materials">
+           </div>
+           <div class="partner-img">
+            <img src="images/1mg5.jpg" alt="Alh wasiu Clothing Materials">
+           </div>
+        <button type="button" class="prev">&lt;</button>
+        <button type="button" class="next">&gt;</button>
+          <p style="margin-top:35px; font-weight:bold; color:#bb9f6f;">Explore our full range online or visit us in store!</p>
         </div>
+      </section>
+      <section class="whatsapp-float">
+        <a href="https://wa.me/2250508049697" target="_blank" class="whatsapp-float">
+          <img src="images/whatsapp-img.png" alt="WhatsApp" />
+        </a>        
       </section>
       <section class="how-to-order">
         <div class="container">
@@ -53,12 +96,14 @@
           <p>
             Ready to get your perfect fabric? Simply browse our collection and send us a message on WhatsApp. Our team is here to help you choose, answer questions, and arrange quick delivery.
           </p>
+         <div class="perfect">
           <p>
             <strong>WhatsApp us now:</strong> 
-            <a href="https://wa.me/2348012345678" target="_blank" rel="noopener" style="color:#bb9f6f; text-decoration:none; font-weight:bold;">
-              +234 7043301883
-            </a>
+            <a href="https://wa.me/2250508049697" target="_blank" style="color:#bb9f6f; text-decoration:none; font-weight:bold;">
+              +225 05 08 049 697
+            </a>            
           </p>
+         </div>
         </div>
       </section>
     <footer class="footer">
@@ -70,37 +115,35 @@
           <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html" class="activa">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Our Gallery</a></li>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Customer Service</h3>
             <ul>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
+              <li><a href="https://wa.me/2250508049697" target="_blank">FAQs</a>
+                <li><a href="https://wa.me/2250508049697" target="_blank">Shipping</a>
+                  <li><a href="https://wa.me/2250508049697" target="_blank">Returns</a>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Stay Connected</h3>
             <form class="newsletter-form">
-              <input type="email" placeholder="Your email address" required />
+              <input type="email" placeholder="Your email address" required id="email" name="email"/>
               <button type="submit">Subscribe</button>
             </form>
             <div class="contact-info">
               <p>Email: info@alhwasiu.com</p>
-              <p>Phone: +234 800 000 0000</p>
-              <p>Address: Lagos, Nigeria</p>
+              <p>Phone:<a href="https://wa.me/2250508049697" target="_blank">+225 05 08 049 697</a></p>
+              <p>Address: Rue Fofana Mamadou, 200 Mosques 🕌 Senegalese 0554325209</p>
             </div>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2025 <strong>Alh Wasiu</strong>. All rights reserved.</p>
         </div>
-      </footer>      
-  
-      <script src="js/script.js"></script>
+      </footer>     
+      <script src="js/index.js"></script>
 </body>
 </html>
