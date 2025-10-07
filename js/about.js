@@ -4,8 +4,7 @@ const times =document.querySelector('.close-nav-toggle');
 const images = document.querySelectorAll('.partner-img');
 const prevBtn = document.querySelector('.prev');
 const nextBtn =document.querySelector('.next');
-let currentImagesIndex = 0;
-
+let currentImagesIndex=0;
 const showImages = (index)=>{
     images.forEach((images,i)=>{
         images.classList.remove('active')

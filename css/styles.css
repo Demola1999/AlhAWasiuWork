@@ -453,20 +453,30 @@ height:600px;
       text-align: center;      
     }
 
-    .partner-img{
+    .galleryimg.action{
+      display:block;
+    }
+    .galleryimg{
       display: none;
     }
 
-    .partner-img.active{
+    .galleryimg.active{
       display: block;
     }
-    .partner-img img{
+    .galleryimg img{
       width:22rem;
       height: auto;
       border-radius: 9px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
+    .partner-img.active{
+      display: block;
+    }
+    .partner-img{
+      display: none;
+    }
+
     .partner-img img{
       width:15rem;
       height:15rem;

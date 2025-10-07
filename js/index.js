@@ -1,41 +1,43 @@
 const primaryNavigation = document.getElementById('primary-navigation');
-const button = document.querySelector('.mobile-nav-toggle');
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const times =document.querySelector('.close-nav-toggle');
-const images = document.querySelectorAll('.partner-img');
-const prevBtn = document.querySelector('.prev');
-const nextBtn =document.querySelector('.next');
-let currentImagesIndex = 0;
+const photo = document.querySelectorAll('.galleryimg');
+const leftBtn =document.querySelector('.left');
+const rightBtn =document.querySelector('.right');
+let currentPhotoIndex=0;
 
-const showImages = (index)=>{
-    images.forEach((images,i)=>{
-        images.classList.remove('active')
-        if(i==index){
-            images.classList.add('active')
-        }
-    });
-};
-button.addEventListener('click',()=>{
-    primaryNavigation.classList.toggle('active')
-    button.style.display='none'
-    times.style.display='block'
-});
+mobileNavToggle.addEventListener('click',(event)=>{
+    event.preventDefault();
+    primaryNavigation.classList.toggle('active');
+    times.style.display='block';
+    mobileNavToggle.style.display='none';
+})
 
-times.addEventListener('click',()=>{
-    primaryNavigation.classList.remove('active') 
-    button.style.display='block'
+times.addEventListener('click',(event)=>{
+    event.preventDefault()
+    primaryNavigation.classList.remove('active')
+    mobileNavToggle.style.display='block';
     times.style.display='none'
 });
-prevBtn.addEventListener('click',()=>{
-    if(currentImagesIndex > 0){
-        currentImagesIndex--;
-        showImages(currentImagesIndex)
+const showPhoto =(index)=>{
+    photo.forEach((photo,i)=>{
+        photo.classList.remove('action');
+        if(i===index){
+            photo.classList.add('action')
+        };
+    });
+}
+leftBtn.addEventListener('click',()=>{
+    if(currentPhotoIndex>0){
+        currentPhotoIndex--;
+        showPhoto(currentPhotoIndex);
     }
-})
-nextBtn.addEventListener('click',()=>{
-    if(currentImagesIndex < (images.length-1)){
-        currentImagesIndex++;
-        showImages(currentImagesIndex) 
-    };
-})
+});
+rightBtn.addEventListener('click',()=>{
+    if(currentPhotoIndex<(photo.length-1)){
+        currentPhotoIndex++;
+        showPhoto(currentPhotoIndex);
+    }
+});
+showPhoto(currentPhotoIndex);
 
-showImages(currentImagesIndex);
